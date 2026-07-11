@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Planetary defense agencies (NASA's PDCO, ESA's NEOCC) track over 35,000 known Near-Earth Objects (NEOs), but **telescope observation time is scarce and expensive**. Not every asteroid can be re-observed regularly, yet many objects — including potentially hazardous ones — have thin, outdated orbital data (short observation arcs, few tracked positions). An object with an uncertain orbit is precisely the kind that could surprise us.
 
@@ -21,7 +21,7 @@ This is a real, active problem discussed in the planetary defense and astrodynam
 
 ---
 
-## 🎯 Project Goal
+##  Project Goal
 
 Build a full pipeline — from raw NASA/JPL API data to a polished, interactive Power BI report — that:
 1. Ingests real close-approach, orbital, and risk data for NEOs
@@ -47,7 +47,7 @@ Build a full pipeline — from raw NASA/JPL API data to a polished, interactive 
 NASA NeoWs API ─┐
 JPL Sentry API ─┼──► Python (requests) ──► MySQL (raw tables) ──► Python (pandas + scikit-learn)
 JPL SBDB API   ─┘                              │                          │
-                                                ▼                          ▼
+                                               ▼                          ▼
                                      MySQL star schema         ML outputs written back to MySQL
                                     (dim_neo, fact_close_approach)
                                                 │
@@ -87,7 +87,7 @@ Key engineering decision: NASA's two APIs use **different ID systems** (NeoWs nu
 
 ---
 
-## 📊 Power BI Report
+## Power BI Report
 
 **Page 1 — Command Center Overview**
 KPI cards (Total NEOs Tracked, Hazardous NEOs, Avg ML Risk Score, Anomalous Objects), Risk Tier donut chart, close-approach distance trend, orbital anomaly scatter plot.
@@ -141,7 +141,7 @@ RETURN DIVIDE(ObjectsBelow, TotalObjects) * 100
 
 ---
 
-## 🚀 How to Run This Project
+##  How to Run This Project
 
 1. Clone this repository
 2. Get a free NASA API key at [api.nasa.gov](https://api.nasa.gov)
@@ -164,8 +164,11 @@ RETURN DIVIDE(ObjectsBelow, TotalObjects) * 100
 
 ---
 
-## 👤 Author
+## 👤 Author 
+- Garvit Gupta
+- https://www.linkedin.com/in/garvit-gupta-87875a226/ (Linkedin Profile)
+- https://garvitwork.github.io/portfolio/  (Portfolio Website)
 
 Built as an end-to-end portfolio project demonstrating data engineering, applied machine learning, and business intelligence skills using real-world scientific data.
 
-**Connect:** [Your LinkedIn] · [Your Portfolio] · [Your Email]
+
