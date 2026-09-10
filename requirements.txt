@@ -4,3 +4,4 @@ mysql-connector-python
 ipykernel
 requests
 wcwidth
+dotenv
